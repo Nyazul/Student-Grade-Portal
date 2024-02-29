@@ -1,0 +1,78 @@
+body {
+    margin: 0px;
+    background-image: url(Images/login-main-background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#login-title {
+    margin: 0px;
+}
+#maindiv {
+    display: inline-flex;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#info {
+    width: 30%;
+    margin-left: 20%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 10% 2% 10% 2%;
+    text-align: center;
+    box-shadow: 0 20px 100px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+}
+h1 {
+    text-shadow: 2px 2px #686868;
+    margin-bottom: 40px;
+}
+h2 {
+    margin: 20px 0px 10px 0px;
+}
+.input {
+    border-radius: 50px;
+    border-style: hidden;
+    color: lightgrey;
+    font-size: medium;
+    background-color: black;
+}
+.button {
+    background-color: lightgrey;
+    border-style: hidden;
+    border-radius: 100px;
+    font-size: medium;
+    box-shadow: 0 10px 100px 0 rgba(0, 0, 0, 0.705), 0 6px 20px 0 rgba(0, 0, 0, 0.705);
+    margin: 10px;
+    padding: 5px;
+    transition: 0.5s;
+
+}
+.button:hover {
+    background-color: black;
+    color: lightgrey;
+}
+#login_button {
+    margin-bottom: 20px;
+}
+#login-type {
+    margin: 25px;
+}
+#forgot_password_link {
+    color: black;
+}
+#forgot_password_link:visited {
+    color: black;
+}
+form {
+    background-color: rgb(134, 134, 134);
+    width: 30%;
+    margin-right: 20%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 5% 0% 10% 0%;
+    box-shadow: 0 20px 100px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+}

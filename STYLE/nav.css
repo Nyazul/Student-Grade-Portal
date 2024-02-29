@@ -1,0 +1,90 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+}
+
+nav {
+    width: 18vw;
+    height: 98vh;
+    background-color: lightgrey;
+    padding-top: 2vh;
+    display: block;
+    z-index: 1;
+    box-shadow: 0 20px 100px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    position: fixed;
+}
+
+#nav_user_name {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.8vw;
+    color: rgb(0, 0, 0);
+    width: 16vw;
+    background-color: rgb(255, 255, 255);
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    margin-bottom: 50px;
+    padding: 1vw 1vw 1vw 1vw;
+    box-shadow: 0 20px 100px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+ul {
+    padding: 0;
+}
+
+.nav_menu_options {
+    list-style-type: none;
+    text-decoration: none;
+    height: 3vw;
+    width: 17vw;
+    font-size: 1.6vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-style: solid;
+    border-color: white;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    margin-top: -3px;
+}
+
+.nav_menu_options:hover {
+    box-shadow: 0 20px 100px 0 rgba(0, 0, 0, 0.301), 0 6px 20px 0 rgba(0, 0, 0, 0.301);
+}
+
+.nav_menu_options a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    padding: 5px;
+}
+
+#logout {
+    position: absolute;
+    bottom: 1vw;
+    background-color: white;
+}
+
+#update_info {
+    position: absolute;
+    bottom: 5vw;
+    background-color: white;
+}
+
+#content {
+    background-color: rgba(51, 255, 0, 0.356);
+    z-index: -1;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 18vw;
+    width:auto;
+
+}
+
+#clg_title {
+    background-color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.2vw;
+    color: rgb(0, 0, 0);
+    margin: 0px;
+    box-shadow: 0 20px 100px 0 rgba(0, 0, 0, 0.301), 0 6px 20px 0 rgba(0, 0, 0, 0.301);
+
+}

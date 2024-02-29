@@ -1,0 +1,32 @@
+<html>
+<head>
+    <title>Welcome!</title>
+    <link rel="stylesheet" href="STYLE/login.css">
+    <script src="JS/login.js"></script>
+</head>
+<body onload="return alertInvalidInfo()">
+    <div id="maindiv">
+        <div id="info">
+            <h1>KKWagh ACS & CS</h1>
+            <p>KK Wagh College, a beacon of academic excellence, is a distinguished institution dedicated to nurturing minds and shaping futures. With a commitment to providing quality education, this esteemed college stands as a cornerstone in the realm of learning.</p>
+        </div>
+        <form action="PHP/login.php" method="post" onsubmit="return validateForm(event)">
+            <center>
+                <h1 id="login-title">User Login</h1>
+                <h2>Username</h2>
+                <input type="text" name="username" id="username" class="input">
+                <h2>Password</h2>
+                <input type="password" name="password" id="password" class="input"><br>
+                <input type="submit" value="Login" name="login" class="button" id="login_button"><br>
+                <a href="PHP/forgot_password.php" id="forgot_password_link">Forgot Password</a>
+                <div id="login-type">
+                    <input type="button" value="Student Login" id="student_login" name="student_login" class="button" onclick="changelogintype('student_login')">
+                    <input type="button" value="Teacher Login" id="teacher_login" name="teacher_login" class="button" onclick="changelogintype('teacher_login')">
+                    <input type="button" value="Admin Login" id="admin_login" name="admin_login" class="button" onclick="changelogintype('admin_login')">
+                </div>
+                <input type="hidden" id="login_preference" name="login_preference" value="">
+            </center>
+        </form>
+    </div>
+</body>
+</html>
