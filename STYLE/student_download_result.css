@@ -3,3 +3,35 @@
     border-color: black;
     margin: 5px 0px 5px 0px;
 }
+
+#student_info_table th, #student_info_table td {
+    border: 0px solid black;
+}
+
+th {
+    background-color: rgba(211, 211, 211, 0.664);
+}
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+#student_info_table {
+    border-collapse: collapse;
+    width: 60vw;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+h1 {
+    text-align: center;
+}

@@ -3,3 +3,9 @@
     border-color: black;
     margin: 5px 0px 5px 0px;
 }
+
+#myChart {
+    padding: 3vw;
+    padding-right: 1vw;
+    padding-bottom: 0vw;
+}

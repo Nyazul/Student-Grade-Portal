@@ -266,6 +266,30 @@ CREATE TABLE course_metadata (
 );
 
 INSERT INTO course_metadata (course, name) VALUES
-    ('course129001', 'TYBCS'),
-    ('course129002', 'MBA');
+    ('course129001', 'B.Sc.(COMPUTER SCIENCE) (Rev.2019) - OCTOBER 2023'),
+    ('course129002', 'Masters in Bussiness Administration (Rev.2019) - OCTOBER 2023');
 
+
+CREATE TABLE notices (
+    time TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL ,
+    head VARCHAR(100),
+    body VARCHAR(10000)
+);
+
+INSERT INTO notices (head, body) VALUES
+    ('March Exams', 'The examinations are scheduled in march. Time Table will be provided soon on your official whatsapp groups.'),
+    ('Gathering Ceremony', 'Gathering Ceremony will start from 13 july'),
+    ('Notice1', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime praesentium recusandae laudantium autem odio debitis magni, libero mollitia aperiam explicabo sapiente qui sequi distinctio necessitatibus harum sed repudiandae, eligendi voluptate et illum ex! Dolores quas facere illum possimus soluta? Eligendi reprehenderit illo libero cum officia deleniti doloremque excepturi? Ipsa odit aut quam sapiente reprehenderit itaque repudiandae, fuga velit, quisquam dolorum assumenda rerum cupiditate nam et necessitatibus. Magni dignissimos quidem, omnis commodi a laborum temporibus vitae cupiditate cum esse, perspiciatis distinctio explicabo. Magni voluptates odio debitis voluptatum optio alias fuga, sit molestias, placeat, consequatur sequi delectus? Aliquid necessitatibus tempore fuga cum, incidunt molestias ad ullam doloribus quisquam saepe voluptatem magni quia provident nostrum modi amet similique quas natus laudantium, delectus suscipit accusamus possimus. Nulla qui, saepe neque, animi architecto aliquid quas consequuntur quibusdam vitae quaerat sint ullam velit dicta accusamus blanditiis sequi temporibus in nobis ipsam alias culpa non incidunt. Pariatur hic maiores nisi molestias corrupti voluptates culpa, nam dolor commodi quis accusantium deleniti sed fugit sapiente, impedit natus aperiam praesentium nemo quod rem corporis quidem repellat, illo ipsam.'),
+    ('Notice2', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime praesentium recusandae laudantium autem odio debitis magni, libero mollitia aperiam explicabo sapiente qui sequi distinctio necessitatibus harum sed repudiandae, eligendi voluptate et illum ex! Dolores quas facere illum possimus soluta?');
+
+CREATE TABLE feedback (
+    time TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    head VARCHAR(100),
+    body VARCHAR(10000),
+    userid VARCHAR(10),
+    usertype Varchar(10)
+);
+
+INSERT INTO feedback (head, body, userid, usertype) VALUES
+    ('Result Format Improvement', 'Change the size of the result to fit the whole page while downloading.', '122010001', 'student'),
+    ('Email Notifications', 'Send emails to students to notify whenever result is published', '122010001', 'student');

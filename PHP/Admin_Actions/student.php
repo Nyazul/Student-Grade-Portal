@@ -52,7 +52,7 @@ if (!$db) {
             <li id="logout" class="nav_menu_options"><a href="../logout.php">Log Out</a></li>
         </ul>
     </nav>
-    <div id="content">
+    <div id="body">
         <center>
             <p id="clg_title">K K Wagh Arts, Commerce, Science and Computer Science College
                 <?php echo "(" . $_SESSION['user_type'] . " account)"; ?>

@@ -6,19 +6,19 @@
     <body>
         <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
             <center>
-                <p class="label">Select User Type</p>
-                <select name="user_type" id="user_type" class="inputs">
+                <p>Select User Type</p>
+                <select name="user_type" id="user_type">
                     <option value="student">Student</option>
                     <option value="teacher">Teacher</option>
                     <option value="admin">Admin</option>
                 </select>
-                <p class="label">Enter Username</p>
-                <input type="text" name="user_id" value="<?php echo $_POST["user_id"];?>" class="inputs">
-                <p class="label">Enter Mobile</p>
-                <input type="text" name="mobile" value="<?php echo $_POST["mobile"];?>" class="inputs">
-                <p class="label">Enter Mail</p>
-                <input type="text" name="mail" value="<?php echo $_POST["mail"];?>" class="inputs"><br><br>
-                <input type="submit" value="Verify" name="verify" class="inputs">
+                <p>Enter Username</p>
+                <input type="text" name="user_id" value="<?php echo $_POST["user_id"];?>">
+                <p>Enter Mobile</p>
+                <input type="text" name="mobile" value="<?php echo $_POST["mobile"];?>">
+                <p>Enter Mail</p>
+                <input type="text" name="mail" value="<?php echo $_POST["mail"];?>"><br><br>
+                <input type="submit" value="Verify" name="verify">
             </center>
         </form>
     </body>

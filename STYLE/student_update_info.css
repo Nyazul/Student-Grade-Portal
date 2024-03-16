@@ -3,3 +3,25 @@
     border-color: black;
     margin: 5px 0px 5px 0px;
 }
+
+p {
+    font-size: large;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+input {
+    margin: 0px;
+    padding: 0px;
+}
+form {
+    height: 55%;
+    width: 30%;
+    background-color: white;
+    margin: 5% 35% 5% 35%;
+    padding-top: 50px;
+    border-radius: 30px;
+}
+body {
+    background-color: lightgrey;
+}
