@@ -46,7 +46,7 @@ if (!$db) {
             <li class="nav_menu_options" id="menu_download_result"><a href="./Student_Actions/download_result.php">Download Result</a></li>
             <li class="nav_menu_options" id="menu_notices"><a href="./Student_Actions/notices.php">Notices</a></li>
             <li class="nav_menu_options" id="menu_feedback"><a href="./Student_Actions/feedback.php">Feedback</a></li>
-            <li id="update_info" class="nav_menu_options"><a href="./Student_Actions/update_info.php">Update Info</a></li>
+            <li id="update_info" class="nav_menu_options"><a href="./update_info.php">Update Info</a></li>
             <li id="logout" class="nav_menu_options"><a href="./logout.php">Log Out</a></li>
         </ul>
     </nav>

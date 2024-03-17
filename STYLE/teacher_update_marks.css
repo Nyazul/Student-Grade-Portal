@@ -3,3 +3,26 @@
     border-color: black;
     margin: 5px 0px 5px 0px;
 }
+
+p {
+    font-size: large;
+    font-weight: bold;
+    margin-top: 4vh;
+    margin-bottom: 15px;
+}
+input {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(216, 216, 216, 0.726);
+}
+form {
+    height: 30vh;
+    width: 30%;
+    background-color: white;
+    margin: 15% 35% 5% 35%;
+    padding-top: 10vh;
+    border-radius: 30px;
+}
+body {
+    background-color: lightgrey;
+}

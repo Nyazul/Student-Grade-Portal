@@ -14,9 +14,10 @@ if (!$db) {
     <title>Teacher Dashboard</title>
     <link rel="stylesheet" href="../STYLE/nav.css">
     <link rel="stylesheet" href="../STYLE/teacher_dashboard.css">
+    <script src="../JS/teacher_dashboard.js"></script>
 </head>
 
-<body>
+<body onload="return alertInfo()">
     <nav>
         <?php
         $user_id = strval($_SESSION["user_id"]);
@@ -45,7 +46,7 @@ if (!$db) {
             <li class="nav_menu_options" id="menu_view_marks"><a href="./Teacher_Actions/view_marks.php">View Marks</a></li>
             <li class="nav_menu_options" id="menu_notices"><a href="./Teacher_Actions/notices.php">Notices</a></li>
             <li class="nav_menu_options" id="menu_feedback"><a href="./Teacher_Actions/feedback.php">Feedback</a></li>
-            <li id="update_info" class="nav_menu_options"><a href="./Teacher_Actions/update_info.php">Update Info</a></li>
+            <li id="update_info" class="nav_menu_options"><a href="./update_info.php">Update Info</a></li>
             <li id="logout" class="nav_menu_options"><a href="./logout.php">Log Out</a></li>
         </ul>
     </nav>

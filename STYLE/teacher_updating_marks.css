@@ -1,15 +1,5 @@
-#menu_view_marks {
-    box-shadow: 0 20px 100px 0 rgba(0, 0, 0, 0.301), 0 6px 20px 0 rgba(0, 0, 0, 0.301);
-    border-color: black;
-    margin: 5px 0px 5px 0px;
-}
-
 #markstable th, #markstable td {
-    border: 1px solid rgba(224, 224, 224, 0.774);
-}
-
-#content {
-    padding-top: 5vh;
+    border: 1px solid rgba(214, 214, 214, 0.795);
 }
 
 th {
@@ -36,6 +26,9 @@ th, td {
     text-align: left;
 }
 
-h1 {
+h2 {
     text-align: center;
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 10vh;
 }
