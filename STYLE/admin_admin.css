@@ -3,3 +3,35 @@
     border-color: black;
     margin: 5px 0px 5px 0px;
 }
+
+#content {
+    margin-top: 25vh;
+}
+
+.menu_options {
+    list-style-type: disc;
+    text-decoration: none;
+    height: 3vw;
+    width: 20vw;
+    font-size: 1.6vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0);
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    margin-top: 13px;
+    padding-left: 2vw;
+}
+
+.menu_options:hover {
+    box-shadow: 0 20px 100px 0 rgba(0, 0, 0, 0.301), 0 6px 20px 0 rgba(0, 0, 0, 0.301);
+}
+
+.menu_options a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    padding: 5px;
+}

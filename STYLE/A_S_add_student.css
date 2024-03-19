@@ -1,0 +1,24 @@
+table {
+    border-collapse: collapse;
+    width: 60vw;
+    margin: auto;
+    margin-bottom: 20px;
+    background-color: rgba(228, 228, 228, 0.664);
+
+}
+
+th, td {
+    border: 0px solid rgb(255, 255, 255);
+    padding: 4vh;
+    text-align: left;
+    font-weight: bold;
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 10vh;
+}

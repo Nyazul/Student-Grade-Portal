@@ -68,7 +68,6 @@ if (!$db) {
                 <li class="menu_options" id="menu_notices"><a href="./Admin_Actions/notices.php">Notices</a></li>
                 <li class="menu_options" id="menu_feedback"><a href="./Admin_Actions/feedback.php">Feedback</a></li>
             </ul>
-
         </center>
     </div>
 </body>

@@ -8,6 +8,11 @@ body {
 #login-title {
     margin: 0px;
 }
+
+p {
+    font-size: large;
+}
+
 #maindiv {
     display: inline-flex;
     height: 100%;
@@ -23,6 +28,7 @@ body {
     box-shadow: 0 20px 100px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     border-top-left-radius: 10%;
     border-bottom-left-radius: 10%;
+    backdrop-filter: blur(20px);
 }
 h1 {
     text-shadow: 2px 2px #686868;

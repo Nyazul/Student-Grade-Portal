@@ -1,0 +1,34 @@
+#markstable th, #markstable td {
+    border: 1px solid rgba(214, 214, 214, 0.795);
+}
+
+th {
+    background-color: rgba(211, 211, 211, 0.664);
+}
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+#markstable {
+    border-collapse: collapse;
+    width: 60vw;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+h2 {
+    text-align: center;
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 10vh;
+}

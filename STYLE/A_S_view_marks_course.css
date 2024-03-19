@@ -1,0 +1,35 @@
+#markstable th, #markstable td {
+    border: 1px solid rgba(224, 224, 224, 0.774);
+}
+
+#content {
+    padding-top: 5vh;
+}
+
+th {
+    background-color: rgba(211, 211, 211, 0.664);
+}
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+#markstable {
+    border-collapse: collapse;
+    width: 60vw;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+h1 {
+    text-align: center;
+}
