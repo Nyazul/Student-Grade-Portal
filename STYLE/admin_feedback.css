@@ -3,3 +3,15 @@
     border-color: black;
     margin: 5px 0px 5px 0px;
 }
+
+.feedbackbox {
+    box-shadow: 0 20px 10px 0 rgba(0, 0, 0, 0.301), 0 6px 20px 0 rgba(0, 0, 0, 0.301);
+    border-style: solid;
+    border-width: 2px;
+    border-color: lightgrey;
+    width: 70vw;
+    margin: 2vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    border-radius: 100px;
+}

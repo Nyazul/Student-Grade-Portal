@@ -6,6 +6,42 @@ if (!$db) {
     echo "Error: Unable to connect to the database.";
     exit();
 }
+
+
+if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["submit"])) {
+    // Validate and sanitize input data
+    $target_utid = pg_escape_string($db, $_POST["utid"]);
+
+    // Check if teacher with given utid already exists
+    $query1 = "SELECT * FROM teacher WHERE utid = $1";
+    $result1 = pg_query_params($db, $query1, [$target_utid]);
+
+    if ($result1) {
+        $row1 = pg_fetch_assoc($result1);
+
+        if (empty($row1)) {
+            header("Location: ./remove_teacher.php?DoesNotExist=true");
+            exit();
+        } else {
+            // Insert new student
+            $query2 = "DELETE FROM teacher WHERE utid = $1";
+            $result2 = pg_query_params($db, $query2, [$target_utid]);
+
+            if ($result2) {
+                header("Location: ./remove_teacher.php?RemoveSuccess=true");
+                exit();
+            } else {
+                // Query execution error
+                echo "Error: Unable to add teacher.";
+                exit();
+            }
+        }
+    } else {
+        // Query execution error
+        echo "Error: " . pg_last_error($db);
+    }
+}
+
 ?>
 
 <html>
@@ -13,10 +49,50 @@ if (!$db) {
 <head>
     <title>Remove Teacher</title>
     <link rel="stylesheet" href="../../../STYLE/nav.css">
-    
+    <style>
+        p {
+            font-size: large;
+            font-weight: bold;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+        input {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        form {
+            height: 35%;
+            width: 30%;
+            background-color: white;
+            margin: 5% 35% 5% 35%;
+            padding-top: 12vh;
+            border-radius: 30px;
+        }
+
+        body {
+            background-color: lightgrey;
+        }
+    </style>
+    <script>
+        function alertInfo() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const removesuccess = urlParams.get('RemoveSuccess');
+            const doesnotexist = urlParams.get('DoesNotExist');
+
+            if (removesuccess) {
+                alert("Teacher Removed Successfully");
+            }
+            if (doesnotexist) {
+                alert("Cannot Remove Teacher, ID Does Not Exists");
+            }
+            return true;
+        }
+    </script>
 </head>
 
-<body>
+<body onload="return alertInfo()">
     <nav>
         <?php
         $user_id = strval($_SESSION["user_id"]);
@@ -57,8 +133,12 @@ if (!$db) {
                 <?php echo "(" . $_SESSION['user_type'] . " account)"; ?>
             </p>
         </center>
-        <center>
-            
+        <center id="content">
+            <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+                <p>Enter Teacher ID</p>
+                <input type="text" name="utid" id="utid" pattern="6[0-9]{4}" required>
+                <br><br><input type="submit" value="Remove" name="submit">
+            </form>
         </center>
     </div>
 </body>

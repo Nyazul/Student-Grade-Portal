@@ -87,15 +87,18 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["submit"])) {
         }
     </style>
     <script>
-        const urlParams = new URLSearchParams(window.location.search);
-        const marksupdated = urlParams.get('MarksUpdated');
-        const idnotexist = urlParams.get('IDNotExist')
+        function alertInfo() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const marksupdated = urlParams.get('MarksUpdated');
+            const idnotexist = urlParams.get('IDNotExist')
 
-        if (marksupdated) {
-            alert("Marks Updated Successfully");
-        } else if (idnotexist) {
-            alert("ID does not exist");
+            if (marksupdated) {
+                alert("Marks Updated Successfully");
+            } else if (idnotexist) {
+                alert("ID does not exist");
+            }
         }
+
 
         function validate_id(event) {
             const clickedButton = event.submitter;
@@ -116,7 +119,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["submit"])) {
     </script>
 </head>
 
-<body>
+<body onload="return alertInfo()">
     <nav>
         <?php
         $user_id = strval($_SESSION["user_id"]);

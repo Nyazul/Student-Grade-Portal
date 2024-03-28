@@ -3,3 +3,19 @@
     border-color: black;
     margin: 5px 0px 5px 0px;
 }
+
+
+
+#content {
+    margin: 10vw;
+    margin-top: 4vw;
+}
+
+input, textarea {
+    background-color: rgba(211, 211, 211, 0.432);
+}
+
+h2 {
+    margin: 0px;
+    padding: 1vw;
+}

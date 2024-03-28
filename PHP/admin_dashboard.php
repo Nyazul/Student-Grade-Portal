@@ -17,7 +17,7 @@ if (!$db) {
     <script src="../JS/admin_dashboard.js"></script>
 </head>
 
-<body>
+<body onload="return alertInfo()">
     <nav>
         <?php
         $user_id = strval($_SESSION["user_id"]);

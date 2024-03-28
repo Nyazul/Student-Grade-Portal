@@ -6,6 +6,33 @@ if (!$db) {
     echo "Error: Unable to connect to the database.";
     exit();
 }
+
+if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["submit"])) {
+    $target_id = $_POST["id"];
+
+    $query1 = "SELECT * FROM admin WHERE uaid = $1";
+    $result1 = pg_query_params($db, $query1, [$target_id]);
+
+    if ($result1) {
+        $row1 = pg_fetch_assoc($result1);
+
+        if (!empty($row1)) {
+            $_SESSION["targetid"] = $target_id;
+            $_SESSION["targettype"] = strval("admin");
+            header("Location: ../changing_target_info.php");
+            exit();
+        } else {
+            header("Location: ./change_admin_info.php?DoesNotExist=true");
+            exit();
+        }
+    } else {
+        // Query execution error
+        echo "Error: " . pg_last_error($db);
+    }
+}
+
+
+
 ?>
 
 <html>
@@ -13,10 +40,49 @@ if (!$db) {
 <head>
     <title>Change Admin Info</title>
     <link rel="stylesheet" href="../../../STYLE/nav.css">
-    
+    <style>
+        p {
+            font-size: large;
+            font-weight: bold;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+        input {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        form {
+            height: 35vh;
+            width: 30%;
+            background-color: white;
+            margin: 15% 35% 5% 35%;
+            padding-top: 10vh;
+            border-radius: 30px;
+        }
+
+        body {
+            background-color: lightgrey;
+        }
+    </style>
+    <script>
+        function alertInfo() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const infochanged = urlParams.get('UpdateSuccessful');
+            const doesnotexist = urlParams.get('DoesNotExist');
+
+
+            if (infochanged) {
+                alert("Info Changed Successfully");
+            } else if (doesnotexist) {
+                alert("User does not exist!");
+            }
+        }
+    </script>
 </head>
 
-<body>
+<body onload="return alertInfo()">
     <nav>
         <?php
         $user_id = strval($_SESSION["user_id"]);
@@ -58,7 +124,11 @@ if (!$db) {
             </p>
         </center>
         <center>
-            
+        <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+                <p>Enter Student ID</p>
+                <input type="text" name="id" id="id" pattern="1[0-9]{4}" required>
+                <br><br><input type="submit" value="Submit" name="submit">
+            </form>
         </center>
     </div>
 </body>
