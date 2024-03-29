@@ -63,7 +63,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["submit"])) {
         }
 
         body {
-            background-color: lightgrey;
+            background-color: rgba(142, 219, 255, 0.507);
         }
     </style>
     <script>

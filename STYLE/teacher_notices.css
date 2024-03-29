@@ -5,10 +5,10 @@
 }
 
 .noticebox {
-    box-shadow: 0 20px 10px 0 rgba(0, 0, 0, 0.301), 0 6px 20px 0 rgba(0, 0, 0, 0.301);
+    box-shadow: 0 20px 10px 0 rgba(15, 156, 221, 0.507), 0 6px 20px 0 rgba(15, 156, 221, 0.507);
     border-style: solid;
     border-width: 2px;
-    border-color: lightgrey;
+    border-color: rgba(15, 156, 221, 0.507);
     width: 70vw;
     margin: 2vw;
     padding-left: 2vw;

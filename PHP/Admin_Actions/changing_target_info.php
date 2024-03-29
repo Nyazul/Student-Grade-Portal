@@ -65,12 +65,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["submit"])) {
             width: 30vw;
             margin: 2vh;
             margin-top: 4vh;
-            background-color: rgba(211, 211, 211, 0.664);
+            background-color: rgba(142, 219, 255, 0.507);
         }
 
 
         td {
-            border: 0px solid black;
+            border: 0px solid rgba(142, 219, 255, 0.507);
             padding: 3vh;
             text-align: left;
         }

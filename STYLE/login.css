@@ -1,6 +1,6 @@
 body {
     margin: 0px;
-    background-image: url(Images/login-main-background.jpg);
+    background-image: url(Images/login-main-background.jpeg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -23,7 +23,7 @@ p {
     margin-left: 20%;
     margin-top: 5%;
     margin-bottom: 5%;
-    padding: 10% 2% 10% 2%;
+    padding: 2% 2% 10% 2%;
     text-align: center;
     box-shadow: 0 20px 100px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     border-top-left-radius: 10%;
@@ -72,7 +72,7 @@ h2 {
     color: black;
 }
 form {
-    background-color: rgb(134, 134, 134);
+    background-color: rgba(149, 183, 210, 1);
     width: 30%;
     margin-right: 20%;
     margin-top: 5%;

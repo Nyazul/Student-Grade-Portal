@@ -1,9 +1,9 @@
 #markstable th, #markstable td {
-    border: 1px solid rgba(214, 214, 214, 0.795);
+    border: 1px solid rgba(142, 219, 255, 0.507);
 }
 
 th {
-    background-color: rgba(211, 211, 211, 0.664);
+    background-color: rgba(142, 219, 255, 0.507);
 }
 
 table {
@@ -21,7 +21,7 @@ table {
 }
 
 th, td {
-    border: 1px solid black;
+    border: 1px solid rgba(142, 219, 255, 0.507);
     padding: 8px;
     text-align: left;
 }

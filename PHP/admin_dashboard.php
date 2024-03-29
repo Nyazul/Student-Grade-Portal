@@ -59,7 +59,8 @@ if (!$db) {
             </p>
         </center>
         <center>
-            <h1 style="font-size: 5vw;">Welcome!</h1>
+            <img src="../STYLE/Images/kkw-logo.png" alt="Could not load image" height="250vh" id="img">
+            <h1 style="font-size: 5vw; margin-top: 1vh;">Welcome!</h1>
             <ul>
                 <li class="menu_options" id="menu_student"><a href="./Admin_Actions/student.php">Student</a></li>
                 <li class="menu_options" id="menu_teacher"><a href="./Admin_Actions/teacher.php">Teacher</a></li>

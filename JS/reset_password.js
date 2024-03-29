@@ -3,8 +3,8 @@ function validate_password(event) {
 
     if (clickedButton.name === "change") {
         console.log("Change button clicked");
-        const pass1 = document.getElementById("pass1").value.trim();
-        const pass2 = document.getElementById("pass2").value.trim();
+        const pass1 = document.getElementById("pass1").value;
+        const pass2 = document.getElementById("pass2").value;
 
         if (pass1 === "" || pass2 === "") {
             alert("Please enter both username and password.");

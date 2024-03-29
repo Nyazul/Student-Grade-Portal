@@ -13,7 +13,7 @@ p {
 input {
     margin: 0px;
     padding: 0px;
-    background-color: rgba(216, 216, 216, 0.726);
+    background-color: rgba(142, 219, 255, 0.507);
 }
 form {
     height: 30vh;
@@ -24,5 +24,5 @@ form {
     border-radius: 30px;
 }
 body {
-    background-color: lightgrey;
+    background-color: rgba(15, 156, 221, 0.507);
 }
