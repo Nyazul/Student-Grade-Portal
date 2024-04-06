@@ -125,7 +125,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["submit"])) {
         </center>
         <center>
         <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
-                <p>Enter Student ID</p>
+                <p>Enter Admin ID</p>
                 <input type="text" name="id" id="id" pattern="1[0-9]{4}" required>
                 <br><br><input type="submit" value="Submit" name="submit">
             </form>

@@ -106,11 +106,19 @@ $mail = $_POST["mail"];
 $password = $_POST["password"];
 $mobile = $_POST["mobile"];
 
-$query = "UPDATE $tablename SET password = $1, mail = $2, mobile = $3 WHERE usid = $4";
+if ($tablename === "student") {
+    $idtype = "usid";
+} elseif ($tablename === "teacher") {
+    $idtype = "utid";
+} elseif ($tablename === "admin") {
+    $idtype = "uaid";
+}
+
+$query = "UPDATE $tablename SET password = $1, mail = $2, mobile = $3 WHERE $idtype = $4";
 $result = pg_query_params($db, $query, array($password, $mail, $mobile, $id));
 
 if ($result) {
-    header("location: ../student_dashboard.php?InfoChanged=true");
+    header("location: ./" . $tablename . "_dashboard.php?InfoChanged=true");
     exit();
 } else {
     if (isset($_POST["change"])) {
