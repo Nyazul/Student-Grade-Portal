@@ -14,7 +14,7 @@ if (!$db) {
     <title>Menu View Result</title>
     <link rel="stylesheet" href="../../STYLE/nav.css">
     <link rel="stylesheet" href="../../STYLE/student_view_result.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../../chart.js"></script>
 </head>
 
 <body>
